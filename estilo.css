@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+.alertainicial {
+    background-color: yellow;
+    padding: 4px;
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(6, 79, 79);
+    color: white;
+
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover { /*fazer isso quando quiser trocar a cor quando passar o mouse em cima do "botão" */
+    background-color: gray;
+    color: black;
+}
+
+.row {
+    display: flex; /*arruma as div em coluna */
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: rgb(92, 233, 233);
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: rgba(145, 148, 148, 0.622);
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(134, 134, 134);
+}
+
+.imagemteste {
+    background-color: coral;
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) { /* para vizualização da pg, ou seja, responsividade (quando for menor que 800px até ele, as classes inseridas (row e navbar) irão virar colunas  */
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
